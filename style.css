@@ -42,6 +42,24 @@
     margin-bottom: 25px;
 }
 
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: #272727;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Initial state is hidden */
+    opacity: 0; /* Initially fully transparent */
+    visibility: hidden; /* Initially hidden */
+    transition: opacity 1s ease-out, visibility 1s ease-out; /* 1 second fade out */
+    max-width: 300px;
+    word-wrap: break-word;
+}
+
 input{
     flex: 1;
     border: none;
@@ -108,3 +126,4 @@ ul li span{
 ul li span:hover{
     background: #edeef0;
 }
+
