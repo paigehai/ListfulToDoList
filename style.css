@@ -88,7 +88,7 @@ ul li{
     position: relative;
 }
 
-ul li:before{
+ul li::before{
     content: '';
     position: absolute;
     height: 28px;
